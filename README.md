@@ -8,7 +8,7 @@ ThingsBoard is able to use SQL or hybrid database approach
 ```
 $ less /var/log/thingsboard/thingsboard.log
 ```
-- After that press "Ctrl+n" to view the latest input and check it.
+- After that press `Ctrl+n` to view the latest input and check it.
 
 # Backup Database
 
