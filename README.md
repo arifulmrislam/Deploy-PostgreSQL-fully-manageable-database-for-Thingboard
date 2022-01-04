@@ -34,4 +34,4 @@ $ sudo cp /etc/thingsboard/conf/* ./
 ```
 $ ll 
 ```
-<img src= "ScreenShort1.png" width=400>
+<img src= "ScreenShort1.png" width=800>
