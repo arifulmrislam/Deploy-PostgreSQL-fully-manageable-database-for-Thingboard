@@ -51,6 +51,8 @@ sudo service postgresql restart
 $ sudo service thingsboard status
 ```
 
+<img src= "ScreenShort2.png" width=800>
+
 
 
 
