@@ -2,7 +2,7 @@
 ```bash
 ThingsBoard is able to use SQL or hybrid database approach
 ```
-- After Installing the Thingsboard PE on Ubuntu machine, What is necessary to back up the whole machine or only the database?
+- After Installing the Thingsboard PE on Ubuntu machine: What is necessary to back up the whole machine or only the database?
 
 - After installation the thingsboard on our `Ubuntu-machine` we can log thingsboard service.
 ```
@@ -14,7 +14,7 @@ $ less /var/log/thingsboard/thingsboard.log
 ```
 Make a backup folder for the database.
 ```
-- Create backup folder
+- Create a backup folder
 ```
 $ mkdir backup
 ```
@@ -22,13 +22,13 @@ $ mkdir backup
 ```
 $ cd backup
 ```
-- Now, we will copy everythings to the current folder.
+- Now, we can copy everything to the current folder.
 ```
 $ sudo cp /etc/thingsboard/conf/* ./
 ```
 `*asterisk` means we copy everythings.
 
-- To view the copy file
+- To check the copy file
 ```
 $ ll 
 ```
