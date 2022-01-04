@@ -46,7 +46,7 @@ sudo service postgresql stop
 sudo service postgresql start
 sudo service postgresql restart
 ```
-- For check the status
+- To check the status
 ```
 $ sudo service thingsboard status
 ```
