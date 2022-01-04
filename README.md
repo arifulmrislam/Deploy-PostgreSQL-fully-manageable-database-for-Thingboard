@@ -28,10 +28,10 @@ $ cd backup
 ```
 $ sudo cp /etc/thingsboard/conf/* ./
 ```
-"*asterisk" means we copy everythings.
+`*asterisk` means we copy everythings.
 
 - To view the copy file
 ```
 $ ll 
 ```
-<img src= "ScreenShort1.png" width=600>
+<img src= "ScreenShort1.png" width=400>
