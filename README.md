@@ -27,6 +27,7 @@ $ sudo cp /etc/thingsboard/conf/* ./
 "*asterisk" means we copy everythings.
 
 - To view the copy file
-- 
+
 $ ll 
+
 <img src= "ScreenShort1.png" width=600>
