@@ -10,7 +10,7 @@ $ less /var/log/thingsboard/thingsboard.log
 ```
 - After that press `Ctrl+n` to view the latest input and check it.
 
-# Backup Database
+## Backup Database
 ```
 Make a backup folder for the database.
 ```
@@ -46,7 +46,10 @@ sudo service postgresql stop
 sudo service postgresql start
 sudo service postgresql restart
 ```
-
+- For check the status
+```
+$ sudo service thingsboard status
+```
 
 
 
