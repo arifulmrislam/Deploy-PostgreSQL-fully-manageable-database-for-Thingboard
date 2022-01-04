@@ -8,7 +8,9 @@ ThingsBoard is able to use SQL or hybrid database approach
 
 - After installation the thingsboard on our machine we can log thingsboard service.
 
+```
 $ less /var/log/thingsboard/thingsboard.log
+```
 
 - After that press "Ctrl+n" to view the latest input and check it.
 
