@@ -26,10 +26,29 @@ $ cd backup
 ```
 $ sudo cp /etc/thingsboard/conf/* ./
 ```
-`*asterisk` means we copy everythings.
+By `*asterisk` we can copy everything from previous folder to the new folder.
 
 - To check the copy file
 ```
 $ ll 
 ```
 <img src= "ScreenShort1.png" width=800>
+
+- Basically, we need `thingsboard.yml` and `thingsboard.conf` files.
+
+- After the backup procedure, we need to stop the things board service.
+
+## Configuration
+
+- Service management commands:
+```
+sudo service postgresql stop
+sudo service postgresql start
+sudo service postgresql restart
+```
+
+
+
+
+
+
