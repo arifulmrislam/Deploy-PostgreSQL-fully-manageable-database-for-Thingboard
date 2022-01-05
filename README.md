@@ -80,7 +80,7 @@ $ sudo -u postgres psql -c "SELECT pg_size_pretty( pg_database_size('thingsboard
 ```
 $ pg_lsclusters
 ```
-`- If there is enough free space - make a backup.
+- If there is enough free space - make a backup.
 ```
 $ pg_dump -U postgres -h localhost -d thingsboard > "specify the file"
 ```
@@ -109,7 +109,7 @@ $ ll
 ```
 <img src= "ScreenShort4.png" width=800>
 
-- After finishing the backup processing to start thingsoard service.
+- After finishing the backup processing, to start the thingsoard service.
 ```
 $ sudo service thingsboard start
 ```
