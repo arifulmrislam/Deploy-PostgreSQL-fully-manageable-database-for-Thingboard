@@ -66,12 +66,53 @@ $ psql -u postgres -h localhost
 
 <img src= "ScreenShort3.png" width=800>
 
+- check the disk space, logout from database and write this command.
+```
+$ df -h /
+```
+- Make sure we have enough space to place a backup of the database
+`Check database size`
+```
+$ sudo -u postgres psql -c "SELECT pg_size_pretty( pg_database_size('thingsboard') );"
+```
 
+- Make sure our PostgreSQL database is running
+```
+$ pg_lsclusters
+```
+`- If there is enough free space - make a backup.
+```
+$ pg_dump -U postgres -h localhost -d thingsboard > "specify the file"
+```
+- Enter the password of `postgres` not out machine.
 
+- Finally, we can check the backup file which is created.
+```
+$ ll -h  
+```
+- Restore the folder for any trouble
+```
+$ pg_restore -U thingsboard -h localhost -d thingsboard > "File name"
+```
 
+- To copy the config file
+```
+$ cd /etc/thingsboard/conf
+$ ll
+$ sudo mv thingsboard.yml thingsboard.yml.invalid
+$ sudo cp ~/backup/thingsboard.yml ./
+```
 
+- Now we can see the copy folder
+```
+$ ll
+```
+<img src= "ScreenShort4.png" width=800>
 
-
+- After finishing the backup processing to start thingsoard service.
+```
+$ sudo service thingsboard start
+```
 
 
 
