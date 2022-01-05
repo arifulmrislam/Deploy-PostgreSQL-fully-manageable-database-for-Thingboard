@@ -53,6 +53,26 @@ $ sudo service thingsboard status
 
 <img src= "ScreenShort2.png" width=800>
 
+- Enter the database to check the free space of database.
+
+- Use `psql-console` to enter the database
+```
+$ psql -u postgres -h localhost
+```
+- Now we will get the details of database.
+```
+\l+
+```
+
+<img src= "ScreenShort3.png" width=800>
+
+
+
+
+
+
+
+
 
 
 
