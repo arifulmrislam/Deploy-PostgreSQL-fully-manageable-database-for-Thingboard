@@ -149,7 +149,7 @@ $ ll
 ## Clean Database
 
 - How to clean a Database? Or How to purge all data older a specific date, like keep only the last six months data?
-- To remove previous data from our database, we can use `PSQL console or Swagger`. Both have some recommendable commands.
+- To remove previous data from our database, we can use `PSQL console or Swagger`. Both have some [recommendable commands](https://www.postgresqltutorial.com/postgresql-cheat-sheet/).
 
 ## `PSQL console`
 
