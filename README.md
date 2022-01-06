@@ -1,6 +1,6 @@
 # Configure-PostgreSQL-ThingsBoard-database
 ```bash
-ThingsBoard is able to use SQL or hybrid database approach
+ThingsBoard is able to use SQL or hybrid database approach.
 ```
 - After Installing the Thingsboard PE on Ubuntu machine: What is necessary to back up the whole machine or only the database?
 
@@ -18,7 +18,7 @@ Make a backup folder for the database.
 ```
 $ mkdir backup
 ```
-- Enter the backup folder
+- Enter the backup folder.
 ```
 $ cd backup
 ```
