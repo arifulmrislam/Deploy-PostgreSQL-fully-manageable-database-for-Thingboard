@@ -146,3 +146,37 @@ $ ll
 ```
 <img src= "ScreenShort5.png" width=800>
 
+- How to clean a Database? Or How to purge all data older a specific date, like keep only the last six months data?
+- To remove previous data from our database, we can use `PSQL console or Swagger`. Both have some recommendable commands.
+- 
+## PSQL console
+
+- First, open psql console and connect to thingsboard.
+- Enter the password of the database and connect with thingsboard. 
+```
+\c thingsboard
+```
+- To see all tables,
+```
+\dt+
+```
+- And describe time-series,
+```
+\d ts_kv
+select * from ts_kv limit 5;
+```
+<img src= "ScreenShort7.png" width=800>
+
+- By [epoch time converter](https://www.epochconverter.com/), we can figure out the time and date. We can delete the data at our specific date.
+
+<img src= "ScreenShort8.png" width=800>
+
+`Key: We should make a backup file for the database and stop the thingsboard service before work.`
+
+
+
+
+
+
+
+
