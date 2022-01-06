@@ -57,7 +57,7 @@ $ sudo service thingsboard status
 
 - Use `psql-console` to enter the database
 ```
-$ psql -u postgres -h localhost
+$ psql -U postgres -h localhost
 ```
 - Now we will get the details of database.
 ```
