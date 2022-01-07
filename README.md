@@ -175,10 +175,28 @@ select * from ts_kv limit 5;
 
 `Key: We should make a backup file for the database and stop the thingsboard service before work.`
 
+## `Swagger-ui`
 
+- Use a brower to login the thingsboard [swagger service](http://localhost/swagger-ui/).
+- Automatically it will open a pop-up and ask authorizations.
 
+<img src= "ScreenShort6.png" width=800>
 
+- Use bearer token: bearer <past your account token>
 
-
+  `Key: We don't need to stop thingsboard service because swagger try to communicate with thingsboard server.`
+ 
+## `Clean events`
+  
+- If we want to clean our role chains, we can clean "events" from database table. 
+ ``` 
+$ psql -U postgres -h localhost
+```  
+```  
+\c thingsboard
+\dt+
+```  
+<img src= "ScreenShort9.png" width=800> 
+  
 
 
