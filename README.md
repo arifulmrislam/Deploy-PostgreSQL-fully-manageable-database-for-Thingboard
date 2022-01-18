@@ -117,6 +117,12 @@ $ ll
 ```
 $ sudo service thingsboard start
 ```
+## Midnight Commander
+
+- We can use `midnight commander` compare between our things board files and our backup files. 
+```
+$ sudo mc
+```
 
 ## File Storage
 - Where are located the files with the application, like configuration files, rule chain, widget and dashboard so on?
