@@ -1,4 +1,8 @@
 # Configure-PostgreSQL-ThingsBoard-database
+
+I installed things board community version in `Dell Server` locally and use `PostgreSQL` database.
+In working period I generate some question and try to make a note for future understanding.
+
 ```bash
 ThingsBoard is able to use SQL or hybrid database approach.
 ```
