@@ -88,7 +88,7 @@ $ pg_lsclusters
 ```
 $ pg_dump -U postgres -h localhost -d thingsboard > "specify the file"
 ```
-- Enter the password of `postgres` not out machine.
+- Enter the password of `postgres` not our machine.
 
 - Finally, we can check the backup file which is created.
 ```
