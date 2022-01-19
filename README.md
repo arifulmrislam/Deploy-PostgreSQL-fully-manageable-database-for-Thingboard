@@ -147,6 +147,12 @@ $ cd bin
 $ ll
 ```
 
+<img src= "ScreenShort10.png" width=800>
+
+
+<img src= "ScreenShort11.png" width=800>
+
+
 - Basically it's executable and some instance and installed data etc. We have config file where we will see `data` folder and here we can see the certificate and some third       party related data.
  
 - Enter the extension folder, which is use for custom developed role node like rule chains.
