@@ -75,7 +75,7 @@ $ psql -U postgres -h localhost
 $ df -h /
 ```
 
-<img src= "ScreenShort01.png" width=800>
+<img src= "ScreenShort12.png" width=800>
 
 
 - Make sure we have enough space to place a backup of the database
