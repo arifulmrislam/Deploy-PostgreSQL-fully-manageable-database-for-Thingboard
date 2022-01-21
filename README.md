@@ -68,7 +68,7 @@ $ psql -U postgres -h localhost
 \l+
 ```
 
-<img src= "ScreenShort3.png" width=800>
+<img src= "ScreenShort03.png" width=800>
 
 - check the disk space, logout from database and write this command.
 ```
