@@ -36,7 +36,7 @@ By `*asterisk` we can copy everything from previous folder to the new folder.
 ```
 $ ll 
 ```
-
+<img src= "ScreenShort1.png" width=800>
 
 - Basically, we need `thingsboard.yml` and `thingsboard.conf` files.
 
