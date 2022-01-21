@@ -55,7 +55,7 @@ sudo service postgresql restart
 $ sudo service thingsboard status
 ```
 
-<img src= "ScreenShort2.png" width=800>
+<img src= "ScreenShort02.png" width=800>
 
 - Enter the database to check the free space of database.
 
