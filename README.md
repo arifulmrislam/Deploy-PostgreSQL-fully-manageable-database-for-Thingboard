@@ -61,15 +61,16 @@ $ sudo service thingsboard status
 - Once PostgreSQL is installed we may want to create a new user or set the password for the the main user. 
   The instructions below will help to set the password for main postgresql user.
   
+## Note:
+- For password setting we must take the thingsboard datasource password. 
+  
 ```
   sudo su - postgres
   psql
   \password
   \q
   
-```
-## Note:
-- For password setting we must take the thingsboard datasource password.  
+``` 
 
 - Enter the database to check the free space of database.
 
