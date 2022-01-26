@@ -232,6 +232,11 @@ $ psql -U postgres -h localhost
 \dt+
 ```  
 <img src= "ScreenShort9.png" width=800> 
+  
+# How can we fix error writing /etc/something.conf: permission denied?
+
+  - We need to give the sdit permisssion by `sudo chmod`
+  - Like: sudo vim /etc/something.conf
    
 
 🚩 Connect with me on social
