@@ -200,9 +200,23 @@ $ ll
 - And describe time-series,
 ```
 \d ts_kv
-select * from ts_kv limit 5;
+thingsboard=# select * from ts_kv limit 5;
 ```
 <img src= "ScreenShort7.png" width=800>
+
+- Basically, Thingsboard stores all the data in ts_kv table. By below command, we can see the details of ts_kv table. 
+```
+thingsboard=# select * from ts_kv;
+```
+
+<img src= "ScreenShort13.png" width=800>
+
+- If we want to delete the records from ts_kv table using timestamp `like Saturday, January 1, 2022 11:14:40 AM to Saturday, February 1, 2022 11:14:40 AM`, we can do it by,
+
+```
+DELETE FROM ts_kv WHERE "ts" >= '1643673600000' AND "ts" < '1643964657892';
+```
+<img src= "ScreenShort14.png" width=800>
 
 - By [epoch time converter](https://www.epochconverter.com/), we can figure out the time and date. We can delete the data at our specific date.
 
