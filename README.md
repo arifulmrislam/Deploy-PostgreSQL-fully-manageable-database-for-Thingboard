@@ -204,7 +204,7 @@ thingsboard=# select * from ts_kv limit 5;
 ```
 <img src= "ScreenShort7.png" width=800>
 
-- Basically, Thingsboard stores all the data in ts_kv table. By below command, we can see the details of ts_kv table. 
+- Basically, Thingsboard stores all the data to ts_kv table. By below command, we can see the details of ts_kv table. 
 ```
 thingsboard=# select * from ts_kv;
 ```
