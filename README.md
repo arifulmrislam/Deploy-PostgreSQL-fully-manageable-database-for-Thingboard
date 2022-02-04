@@ -218,7 +218,7 @@ DELETE FROM ts_kv WHERE "ts" >= '1643673600000' AND "ts" < '1643964657892';
 ```
 <img src= "ScreenShort14.png" width=800>
 
-- By [epoch time converter](https://www.epochconverter.com/), we can figure out the time and date. We can delete the data at our specific date.
+- With [epoch time converter](https://www.epochconverter.com/) web application, We can easily convert the timestamp to human readable data.
 
 <img src= "ScreenShort8.png" width=800>
 
