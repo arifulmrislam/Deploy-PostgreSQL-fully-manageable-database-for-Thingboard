@@ -251,6 +251,15 @@ $ psql -U postgres -h localhost
 
   - We need to give the sdit permisssion by `sudo chmod`
   - Like: sudo vim /etc/something.conf
+  
+  ## `PgAdmin4`
+  
+  - How to inter the pgadmin4 config file?
+  `sudo vim /etc/postgresql/14/main/pg_hba.conf`
+
+  
+  
+  
    
 
 🚩 Connect with me on social
