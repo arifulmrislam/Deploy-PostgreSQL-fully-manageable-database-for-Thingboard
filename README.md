@@ -256,8 +256,8 @@ $ psql -U postgres -h localhost
   
   - Creating Database in PostgreSQL using user name and password.
   ```
-  $ sudo su - postgres
-  $ psql
+  sudo su - postgres
+  psql
   postgres=#
   ```
   - Now create a new database and a user using the following commands.
