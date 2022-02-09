@@ -254,17 +254,60 @@ $ psql -U postgres -h localhost
   
   ## `PgAdmin4`
   
-  - How to inter the `pgadmin4` config file?
+  - Creating Database in PostgreSQL using user name and password.
+  ```
+  $ sudo su - postgres
+  $ psql
+  postgres=#
+  ```
+  - Now create a new database and a user using the following commands.
+  
+  ```
+  postgres=# CREATE USER admin WITH PASSWORD 'admin@postgres';
+  postgres=# CREATE DATABASE testdb;
+  postgres=# GRANT ALL PRIVILEGES ON DATABASE testdb to admin;
+  postgres=# \q
+  ```
+
+  - Configuring PostgreSQL Client Authentication
+  
+  PostgreSQL uses client authentication to decide which user accounts can connect to which databases from which hosts and this is 
+  controlled by settings in the client   authentication configuration file, which on Ubuntu is located at /etc/postgresql/12/main/pg_hba.conf.
+  
+  - Open this file using your favorite text editor as shown.
   
   ```
   sudo vim /etc/postgresql/14/main/pg_hba.conf
   ```
-
+  - Restart the PostgreSQL service.
+  
+  ```
+  sudo systemctl restart postgresql
+  ```
+  
+  ## `Installing pgAdmin4 in Ubuntu`
+  -  pgAdmin4 APT repository,
+  
+  ```
+   curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+   sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+  ```
+  - Install pgAdmin4,
+  ```
+  sudo apt install pgadmin4
+   ```
+  - Email address and set a strong secure password as well:
+  
+  ```
+  sudo /usr/pgadmin4/bin/setup-web.sh
+  ```
+  
+ - Accessing pgAdmin4 Web Interface
+  ```
+  http://127.0.0.1/pgadmin4
+  ``` 
   
   
-  
-   
-
 🚩 Connect with me on social
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ariful-islam-arif-2987b51a3/)
 - Twitter: [Twitter](https://twitter.com/arifulislam301)
