@@ -55,7 +55,7 @@ sudo service postgresql restart
 $ sudo service thingsboard status
 ```
 
-<img src= "ScreenShort02.png" width=800>
+<img src= "IMG/ScreenShort02.png" width=800>
 
 
 - Once PostgreSQL is installed we may want to create a new user or set the password for the the main user. 
@@ -83,14 +83,14 @@ $ psql -U postgres -h localhost
 \l+
 ```
 
-<img src= "ScreenShort03.png" width=1000>
+<img src= "IMG/ScreenShort03.png" width=1000>
 
 - check the disk space, logout from database and write this command.
 ```
 $ df -h /
 ```
 
-<img src= "ScreenShort12.png" width=800>
+<img src= "IMG/ScreenShort12.png" width=800>
 
 
 - Make sure we have enough space to place a backup of the database
@@ -130,7 +130,7 @@ $ sudo cp ~/backup/thingsboard.yml ./
 ```
 $ ll
 ```
-<img src= "ScreenShort4.png" width=800>
+<img src= "IMG/ScreenShort4.png" width=800>
 
 - After finishing the backup processing, to start the thingsoard service.
 ```
@@ -166,10 +166,10 @@ $ cd bin
 $ ll
 ```
 
-<img src= "ScreenShort10.png" width=800>
+<img src= "IMG/ScreenShort10.png" width=800>
 
 
-<img src= "ScreenShort11.png" width=800>
+<img src= "IMG/ScreenShort11.png" width=800>
 
 
 - Basically it's executable and some instance and installed data etc. We have config file where we will see `data` folder and here we can see the certificate and some third       party related data.
@@ -179,7 +179,7 @@ $ ll
 $ cd extensiions/
 $ ll
 ```
-<img src= "ScreenShort5.png" width=800>
+<img src= "IMG/ScreenShort5.png" width=800>
 
 ## Clean Database
 
@@ -202,25 +202,25 @@ $ ll
 \d ts_kv
 thingsboard=# select * from ts_kv limit 5;
 ```
-<img src= "ScreenShort7.png" width=800>
+<img src= "IMG/ScreenShort7.png" width=800>
 
 - Basically, Thingsboard stores all the data to ts_kv table. By below command, we can see the details of ts_kv table. 
 ```
 thingsboard=# select * from ts_kv;
 ```
 
-<img src= "ScreenShort13.png" width=800>
+<img src= "IMG/ScreenShort13.png" width=800>
 
 - If we want to delete the records from ts_kv table using timestamp `like Saturday, January 1, 2022 11:14:40 AM to Saturday, February 1, 2022 11:14:40 AM`, we can do it by,
 
 ```
 DELETE FROM ts_kv WHERE "ts" >= '1643673600000' AND "ts" < '1643964657892';
 ```
-<img src= "ScreenShort14.png" width=800>
+<img src= "IMG/ScreenShort14.png" width=800>
 
 - With [epoch time converter](https://www.epochconverter.com/) web application, We can easily convert the timestamp to human readable data.
 
-<img src= "ScreenShort8.png" width=800>
+<img src= "IMG/ScreenShort8.png" width=800>
 
 `Key: We should make a backup file for the database and stop the thingsboard service before work.`
 
@@ -229,7 +229,7 @@ DELETE FROM ts_kv WHERE "ts" >= '1643673600000' AND "ts" < '1643964657892';
 - Use a brower to login the thingsboard [swagger service](http://localhost/swagger-ui/).
 - Automatically it will open a pop-up and ask authorizations.
 
-<img src= "ScreenShort6.png" width=800>
+<img src= "IMG/ScreenShort6.png" width=800>
 
 - Use bearer token: bearer <past your account token>
 
@@ -245,7 +245,7 @@ $ psql -U postgres -h localhost
 \c thingsboard
 \dt+
 ```  
-<img src= "ScreenShort9.png" width=800> 
+<img src= "IMG/ScreenShort9.png" width=800> 
   
 ## `How can we fix error writing /etc/something.conf: permission denied?`
 
