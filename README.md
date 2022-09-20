@@ -1,4 +1,4 @@
-# Deploy PostgreSQL fully manageable database for Thingboard
+# Deploy PostgreSQL fully manageable database for Thingsboard
 
 I installed things board community version in `Dell Server` locally and use `PostgreSQL` database.
 In working period I generate some question and try to make a note for future understanding.
