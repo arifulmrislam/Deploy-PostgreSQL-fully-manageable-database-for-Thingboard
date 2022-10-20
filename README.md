@@ -211,7 +211,7 @@ thingsboard=# select * from ts_kv;
 
 <img src= "IMG/ScreenShort13.png" width=800>
 
-- If we want to delete the records from ts_kv table using timestamp `like Saturday, January 1, 2022 11:14:40 AM to Saturday, February 1, 2022 11:14:40 AM`, we can do it by,
+- If we want to delete the records from ts_kv table using timestamp,  `like Saturday, January 1, 2022 11:14:40 AM to Saturday, February 1, 2022 11:14:40 AM`,  we can do it by,
 
 ```
 DELETE FROM ts_kv WHERE "ts" >= '1643673600000' AND "ts" < '1643964657892';
