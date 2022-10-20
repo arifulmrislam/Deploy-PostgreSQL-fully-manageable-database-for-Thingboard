@@ -269,10 +269,12 @@ $ psql -U postgres -h localhost
   postgres=# \q
   ```
 
-  - Configuring PostgreSQL Client Authentication
+  - Configuring PostgreSQL Client Authentication,
   
+  ```
   PostgreSQL uses client authentication to decide which user accounts can connect to which databases from which hosts and this is 
   controlled by settings in the client   authentication configuration file, which on Ubuntu is located at /etc/postgresql/12/main/pg_hba.conf.
+  ```
   
   - Open this file using your favorite text editor as shown.
   
