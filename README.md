@@ -58,7 +58,7 @@ $ sudo service thingsboard status
 <img src= "IMG/ScreenShort02.png" width=800>
 
 
-- Once PostgreSQL is installed we may want to create a new user or set the password for the the main user. 
+- Once PostgreSQL is installed we may want to create a new user or set the password for the the main user.   
   The instructions below will help to set the password for main postgresql user.
   
 ## Note: 
